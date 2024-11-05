@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Multiple Tabs</title>
+    <script>
+        window.onload = function() {
+            setTimeout(openTabs, 10); // Delay for 0.5 seconds
+        };
+
+        function openTabs() {
+            const urls = [
+                'https://www.mathspace.co/student',
+                'https://www.qlearn.eq.edu.au',
+                'https://outlook.office365.com/mail/',
+                'https://kelvingrovesc.eq.daymap.net/daymap/calendar/MyCalendar.aspx',
+                'https://www.google.com/search?q=velocity+formula&oq=velocity+formula&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIMCAEQABhDGIAEGIoFMhgIAhAuGBQYgwEYrwEYxwEYhwIYsQMYgAQyCggDEAAYsQMYgAQyDAgEEAAYFBiHAhiABDIMCAUQABhDGIAEGIoFMgcIBhAAGIAEMgoIBxAAGLEDGIAEMgoICBAAGLEDGIAEMgoICRAAGLEDGIAE0gEJNjI5NWowajE1qAIIsAIB&sourceid=chrome&ie=UTF-8',
+                'https://kahoot.it/',
+                'https://www.google.com/search?q=the+importance+of+plant+cells+in+the+ecosystem&sca_esv=d71b92fe6c3f5d35&sxsrf=ADLYWIKkIL8fISFO44DRTVmoH1iosovckw%3A1730418292881&ei=dBYkZ8q4NaWj5NoPz4TA0Ao&ved=0ahUKEwjKwqO95rmJAxWlEVkFHU8CEKoQ4dUDCBA&uact=5&oq=the+importance+of+plant+cells+in+the+ecosystem&gs_lp=Egxnd3Mtd2l6LXNlcnAiLnRoZSBpbXBvcnRhbmNlIG9mIHBsYW50IGNlbGxzIGluIHRoZSBlY29zeXN0ZW0yBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGAoyBBAhGApIpq8BUIoEWJ2rAXABeAGQAQKYAeYKoAGhjwGqAQg1LTMuNC4xMbgBA8gBAPgBAZgCEaAC53qoAhTCAgcQIxgnGOoCwgITEAAYgAQYQxi0AhiKBRjqAtgBAcICChAjGIAEGCcYigXCAgoQLhiABBgnGIoFwgILEAAYgAQYkQIYigXCAgoQABiABBhDGIoFwgILEC4YgAQYsQMYgwHCAgQQIxgnwgIFEC4YgATCAggQLhiABBixA8ICCxAAGIAEGLEDGIMBwgIIEAAYgAQYsQPCAgsQLhiABBixAxjUAsICDhAAGIAEGLEDGIMBGIoFwgIXEC4YgAQYsQMYlwUY3AQY3gQY4ATYAQHCAgUQABiABMICCxAuGIAEGMcBGK8BwgIaEC4YgAQYsQMY1AIYlwUY3AQY3gQY4ATYAQHCAggQABgWGB4YD8ICBhAAGBYYHsICCxAAGIAEGIYDGIoFwgIFECEYoAHCAgUQIRifBZgDBroGBggBEAEYAZIHCzEuNC0xLjQuNS42oAfvvwE&sclient=gws-wiz-serp',
+            ];
+
+            // Attempt to open each URL in a new tab
+            urls.forEach(url => {
+                window.open(url, '_blank');
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Opening Multiple Tabs...</h1>
+    <p>Please allow popups for this site to see the tabs.</p>
+</body>
+</html>
+
